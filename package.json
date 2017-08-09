@@ -4,6 +4,10 @@
   "version": "0.0.0-development",
   "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
   "bugs": "https://github.com/bahmutov/from-iso/issues",
+  "preferGlobal": true,
+  "bin": {
+    "from-iso": "src/index.js"
+  },
   "config": {
     "pre-git": {
       "commit-msg": "simple",

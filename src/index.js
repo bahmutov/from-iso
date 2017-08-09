@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 'use strict'
 
 function isoToLocale (str) {
@@ -15,3 +17,12 @@ function isoToLocale (str) {
 
 // eslint-disable-next-line immutable/no-mutation
 module.exports = isoToLocale
+
+if (!module.parent) {
+  const str = process.argv[2]
+  const local = isoToLocale(str)
+  if (!local) {
+    process.exit(-1)
+  }
+  console.log(local)
+}
