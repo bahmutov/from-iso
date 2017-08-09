@@ -6,6 +6,8 @@ notifications:
   email: true
 node_js:
   - '6'
+before_install:
+  - export TZ=America/New York
 before_script:
   - npm prune
 after_success:
