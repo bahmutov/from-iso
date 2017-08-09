@@ -7,7 +7,7 @@
 //  /Reference/Global_Objects/Date/toLocaleString
 function isoToLocale (str, locale, options) {
   if (typeof str !== 'string') {
-    console.error("Sorry, don't know what to do with", str)
+    console.error("Sorry, don't know what to do with date", str)
     return
   }
   if (!str) {
