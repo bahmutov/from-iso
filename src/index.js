@@ -2,7 +2,10 @@
 
 'use strict'
 
-function isoToLocale (str) {
+// passing locale and options allows for simple testing
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript
+//  /Reference/Global_Objects/Date/toLocaleString
+function isoToLocale (str, locale, options) {
   if (typeof str !== 'string') {
     console.error("Sorry, don't know what to do with", str)
     return
@@ -12,7 +15,7 @@ function isoToLocale (str) {
     return
   }
   const d = new Date(str)
-  return d.toLocaleString()
+  return d.toLocaleString(locale, options)
 }
 
 // eslint-disable-next-line immutable/no-mutation
