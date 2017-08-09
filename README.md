@@ -10,13 +10,21 @@
 
 ## Install
 
-Requires [Node](https://nodejs.org/en/) version 6 or above.
+Requires [Node](https://nodejs.org/en/)
 
 ```sh
-npm install --save from-iso
+npm install -g from-iso
 ```
 
 ## Use
+
+Copy / paste ISO date strings common in server logs. For my Eastern Time Zone
+for example
+
+```
+$ from-iso 2017-08-09T03:20:10.437Z
+8/8/2017, 11:20:10 PM
+```
 
 ### Small print
 
